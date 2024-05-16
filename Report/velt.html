@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>ООО "ВэлтКомпани"</title>
+<style>
+    body{
+     background-color: white;
+     color:black;
+     font-family:Arial, Helvetica, sans-serif;
+    }
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+    }
+    .item1{
+     .main {
+     list-style-type:none;
+     border-color: gray;
+     margin: 1;
+     padding: 0;
+     background-color:white;
+     }
+     li {
+        display:inline;
+        float:left;
+    }
+    li a {
+     display: block;
+     color: gray;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+    }
+    li a:hover {
+     color: brown;
+    }
+    .search{
+        float: right;
+        margin:0;
+    }
+    .sub-wrap{
+        float:right;
+    }
+    .inp1{
+        width: 300px;
+        height:30px;
+    }
+    .inp2{
+        width: 50px;
+        height:35px;
+        background: url(search.png);
+    }
+    }
+    .item2{
+        .lefted{
+            overflow:auto;
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(3, 65, 38);
+        }
+        li {
+        display:inline;
+        float:left;
+        }
+        li a {
+     display:block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+    }
+    li a:hover {
+        background-color: yellow;
+     color: black;
+    }
+    nav{
+        float:left;
+        width:13%;
+    }
+    .left1{
+        float:left;
+        margin-left:120px;
+    }
+    h1{
+        float:left;
+        margin:100px;
+    }
+}
+    .item1 {
+grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.item2 {
+    grid-column-start: 1;
+  grid-column-end: 3;
+}
+</style>
+</head>
+<body>
+<main>
+    <div class="grid-container">
+        <div class="item1">
+            <header>
+                <img src="logo.png" alt="Logo" style="width:200px;height:auto;float:left;">
+                <ul class="main">
+                    <li><a class="active" href="#main">Главная</a></li>
+                    <li><a href="#about">О Компании</a></li>
+                    <li><a href="#contact">Напишите Нам</a></li>
+                    <li><a href="#adress">Наш Адресс</a></li>
+                    <li><a href="#catalogue">Каталоги</a></li>
+                    <li><a class="active" href="#request">Оставить Заявку</a></li>
+                  </ul>
+                  <form action="/search" method="get" class="search">
+                    <input class="inp1" name="search" type="text" placeholder="Поиск по сайту">
+                    <div class="sub-wrap"><input class="inp2" type="submit" value=""></div>
+                  </form>
+            </header>
+        </div>
+        <div class="item2">
+            <hr>
+            <h2>Главная</h2>
+            <nav>
+            <ul class="lefted">
+                <li><a class="active" href="#1">Инструмент Rennsteig</a></li>
+                <li><a href="#2">Инструмент Pro'sKit</a></li>
+                <li><a href="#3">Компоненты для микроклимата шкафов</a></li>
+                <li><a href="#4">Источники питания MeanWell</a></li>
+                <li><a href="#5">Датчики Vaisala</a></li>
+                <li><a href="#6">Датчики давления</a></li>
+                <li><a href="#7">Датчики температуры</a></li>
+                <li><a href="#8">Датчики уровня</a></li>
+                <li><a href="#9">Датчики влажности</a></li>
+                <li><a href="#10">Датчики углекислого газа</a></li>
+                <li><a href="#11">Концевые выключатели</a></li>
+                <li><a href="#12">Клапаны</a></li>
+                <li><a href="#13">Расходматериалы</a></li>
+                <li><a href="#14">Пневматика</a></li>
+                <li><a href="#15">Мехатроника</a></li>
+                <li><a href="#16">АВВ</a></li>
+                <li><a href="#17">Eaton-Moeller</a></li>
+                <li><a href="#18">Legrand</a></li>
+                <li><a href="#20">Stego</a></li>
+                <li><a href="#21">Lovato</a></li>
+                <li><a href="#22">ZEZ</a></li>
+                <li><a href="#23">Finder</a></li>
+                <li><a href="#24">Relpol</a></li>
+                <li><a href="#25">Weidmuller</a></li>
+                <li><a href="#26">Scame</a></li>
+              </ul>
+            </nav>
+            <div class="left1">
+                <img src="logo1.png" alt="Logo" style="width:150px;height:auto;">
+                <form>
+                    <select id="1" name="1">
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    </select>
+                </form>
+            </div>
+            <div class="left1">
+                <img src="logo2.png" alt="Logo" style="width:150px;height:auto;">
+                <form>
+                    <select id="2" name="2">
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    </select>
+                </form>
+            </div>
+            <div class="left1">
+                <img src="logo3.png" alt="Logo" style="width:100px;height:auto;">
+                <form>
+                    <select id="3" name="3">
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                </select>
+                </form>
+            </div><br>
+            <div class="left1">
+                <img src="logo4.png" alt="Logo" style="width:100px;height:auto;">
+                <form>
+                    <select id="4" name="4">
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                </select>
+                </form>
+            </div>
+            <div class="left1">
+                <img src="logo5.png" alt="Logo" style="width:200px;height:auto;">
+                <form>
+                    <select id="5" name="5">
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                </select>
+                </form>
+            </div>
+            <div class="left1">
+                <img src="logo6.png" alt="Logo" style="width:150px;height:auto;">
+                <form>
+                    <select id="6" name="6">
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                    <option><a href="#">Инструмент для резки кабеля</a></option>
+                </select>
+                </form>
+            </div>
+            <h1>Etc. in the same way</h1>
+        </div>
+        <div class="item3">
+            <hr>
+            <p>9:00-18:00</p>
+            <p>+375 17 513-77-61</p>
+            <p>+375 17 513-77-64</p>
+            <p>+375 152 71-52-49</p>
+            <p>veltk@tut.by</p>
+        </div>
+</main>
+</body>
